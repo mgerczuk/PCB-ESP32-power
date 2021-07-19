@@ -230,11 +230,32 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# SamacSys_Parts_IP5108
+# SamacSys_Parts_SY8008B
 #
-DEF SamacSys_Parts_IP5108 IC 0 30 Y Y 1 F N
+DEF SamacSys_Parts_SY8008B IC 0 30 Y Y 1 F N
+F0 "IC" 850 300 50 H V L CNN
+F1 "SamacSys_Parts_SY8008B" 850 200 50 H V L CNN
+F2 "SOT95P285X140-5N" 850 100 50 H I L CNN
+F3 "http://www.sunnyqi.com/upLoad/product/month_1306/SY8008.pdf" 850 0 50 H I L CNN
+F4 "High Efficiency 1.5MHz, 0.6A/1A/1.2A Synchronous Step Down Regulator Preliminary Spec" 850 -100 50 H I L CNN "Description"
+F5 "1.4" 850 -200 50 H I L CNN "Height"
+F6 "Silergy" 850 -300 50 H I L CNN "Manufacturer_Name"
+F7 "SY8008B" 850 -400 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 800 100 800 -300 200 -300 200 100 N
+X EN 1 0 0 200 R 50 50 0 0 P
+X GND 2 0 -100 200 R 50 50 0 0 P
+X LX 3 0 -200 200 R 50 50 0 0 P
+X IN 4 1000 0 200 L 50 50 0 0 P
+X FB 5 1000 -100 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# ip5108-rescue_IP5108-IP5108
+#
+DEF ip5108-rescue_IP5108-IP5108 IC 0 30 Y Y 1 F N
 F0 "IC" 1250 300 50 H V L CNN
-F1 "SamacSys_Parts_IP5108" 1250 200 50 H V L CNN
+F1 "ip5108-rescue_IP5108-IP5108" 1250 200 50 H V L CNN
 F2 "SOIC127P600X175-17N" 1250 100 50 H I L CNN
 F3 "https://datasheet.lcsc.com/szlcsc/1811051522_INJOINIC-IP5108_C180943.pdf" 1250 0 50 H I L CNN
 F4 "Power Management ICs/PMIC - Battery Management" 1250 -100 50 H I L CNN "Description"
@@ -260,27 +281,6 @@ X VOUT_2 6 0 -500 200 R 50 50 0 0 P
 X VIN 7 0 -600 200 R 50 50 0 0 P
 X LIGHT 8 0 -700 200 R 50 50 0 0 P
 X L1/SCL 9 1400 -700 200 L 50 50 0 0 P
-ENDDRAW
-ENDDEF
-#
-# SamacSys_Parts_SY8008B
-#
-DEF SamacSys_Parts_SY8008B IC 0 30 Y Y 1 F N
-F0 "IC" 850 300 50 H V L CNN
-F1 "SamacSys_Parts_SY8008B" 850 200 50 H V L CNN
-F2 "SOT95P285X140-5N" 850 100 50 H I L CNN
-F3 "http://www.sunnyqi.com/upLoad/product/month_1306/SY8008.pdf" 850 0 50 H I L CNN
-F4 "High Efficiency 1.5MHz, 0.6A/1A/1.2A Synchronous Step Down Regulator Preliminary Spec" 850 -100 50 H I L CNN "Description"
-F5 "1.4" 850 -200 50 H I L CNN "Height"
-F6 "Silergy" 850 -300 50 H I L CNN "Manufacturer_Name"
-F7 "SY8008B" 850 -400 50 H I L CNN "Manufacturer_Part_Number"
-DRAW
-P 5 0 1 6 200 100 800 100 800 -300 200 -300 200 100 N
-X EN 1 0 0 200 R 50 50 0 0 P
-X GND 2 0 -100 200 R 50 50 0 0 P
-X LX 3 0 -200 200 R 50 50 0 0 P
-X IN 4 1000 0 200 L 50 50 0 0 P
-X FB 5 1000 -100 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #

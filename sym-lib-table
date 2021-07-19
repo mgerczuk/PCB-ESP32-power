@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name stepdown12_5)(type Legacy)(uri ${KIPRJMOD}/stepdown12_5.lib)(options "")(descr ""))
+  (lib (name IP5108Comp)(type Legacy)(uri ${KIPRJMOD}/IP5108/IP5108Comp.lib)(options "")(descr ""))
+  (lib (name ip5108-rescue)(type Legacy)(uri ${KIPRJMOD}/ip5108-rescue.lib)(options "")(descr ""))
+)

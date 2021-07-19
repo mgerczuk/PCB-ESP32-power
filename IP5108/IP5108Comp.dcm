@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP IP5108
+D Power Management ICs/PMIC - Battery Management
+F https://datasheet.lcsc.com/szlcsc/1811051522_INJOINIC-IP5108_C180943.pdf
+$ENDCMP
+#
+#End Doc Library

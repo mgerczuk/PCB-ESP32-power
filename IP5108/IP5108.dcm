@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP IP5108
+D Power Management ICs/PMIC - Battery Management
+F https://datasheet.lcsc.com/szlcsc/1811051522_INJOINIC-IP5108_C180943.pdf
+$ENDCMP
+#
+$CMP Inductor_CD54
+D SMD Power Inductor CD54
+F https://products.sumida.com/products/pdf/CD54.pdf
+$ENDCMP
+#
+#End Doc Library
