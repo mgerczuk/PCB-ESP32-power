@@ -251,11 +251,11 @@ X FB 5 1000 -100 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
-# ip5108-rescue_IP5108-IP5108
+# pcb-esp32-power-rescue_IP5108-IP5108-ip5108-rescue
 #
-DEF ip5108-rescue_IP5108-IP5108 IC 0 30 Y Y 1 F N
+DEF pcb-esp32-power-rescue_IP5108-IP5108-ip5108-rescue IC 0 30 Y Y 1 F N
 F0 "IC" 1250 300 50 H V L CNN
-F1 "ip5108-rescue_IP5108-IP5108" 1250 200 50 H V L CNN
+F1 "pcb-esp32-power-rescue_IP5108-IP5108-ip5108-rescue" 1250 200 50 H V L CNN
 F2 "SOIC127P600X175-17N" 1250 100 50 H I L CNN
 F3 "https://datasheet.lcsc.com/szlcsc/1811051522_INJOINIC-IP5108_C180943.pdf" 1250 0 50 H I L CNN
 F4 "Power Management ICs/PMIC - Battery Management" 1250 -100 50 H I L CNN "Description"

@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ip5108-rescue:IP5108-IP5108 IC?
+L pcb-esp32-power-rescue:IP5108-IP5108-ip5108-rescue IC?
 U 1 1 60F34737
 P 5100 3100
 AR Path="/60F34737" Ref="IC?"  Part="1" 
