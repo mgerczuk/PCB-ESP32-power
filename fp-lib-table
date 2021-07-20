@@ -1,4 +1,5 @@
 (fp_lib_table
   (lib (name StepDownBreakout)(type KiCad)(uri ${KIPRJMOD}/StepDownBreakout.pretty)(options "")(descr ""))
   (lib (name IP5108)(type KiCad)(uri ${KIPRJMOD}/IP5108/IP5108.pretty)(options "")(descr ""))
+  (lib (name esp32bus)(type KiCad)(uri ${KIPRJMOD}/esp32bus/esp32bus.pretty)(options "")(descr ""))
 )

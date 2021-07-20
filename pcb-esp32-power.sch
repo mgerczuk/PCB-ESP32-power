@@ -421,28 +421,6 @@ F 3 "~" H 8150 3450 50  0001 C CNN
 	1    8150 3450
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x16 J4
-U 1 1 60DF91CB
-P 7700 1650
-F 0 "J4" H 7780 1692 50  0000 L CNN
-F 1 "Conn_01x16" H 7780 1601 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x16_P2.54mm_Vertical" H 7700 1650 50  0001 C CNN
-F 3 "~" H 7700 1650 50  0001 C CNN
-	1    7700 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x14 J3
-U 1 1 60DF886D
-P 6100 1650
-F 0 "J3" H 6180 1692 50  0000 L CNN
-F 1 "Conn_01x14" H 6180 1601 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x14_P2.54mm_Vertical" H 6100 1650 50  0001 C CNN
-F 3 "~" H 6100 1650 50  0001 C CNN
-	1    6100 1650
-	1    0    0    -1  
-$EndComp
 $Sheet
 S 8600 1200 800  400 
 U 60F1A96E
@@ -532,12 +510,90 @@ F 3 "" H 4600 2250 50  0001 C CNN
 	1    4600 2250
 	1    0    0    -1  
 $EndComp
-Text GLabel 5900 1550 0    50   Input ~ 0
+Text GLabel 2500 4000 0    50   Input ~ 0
 EXTPOW
-Text GLabel 7500 1450 0    50   Input ~ 0
+Text GLabel 3700 4000 2    50   Input ~ 0
 SDA
-Text GLabel 7500 1150 0    50   Input ~ 0
+Text GLabel 3700 3700 2    50   Input ~ 0
 SCL
-Text GLabel 5900 2050 0    50   Input ~ 0
+Text GLabel 2500 4500 0    50   Input ~ 0
 INT
+$Comp
+L ESP32_Bus:Bus_Connector J3
+U 1 1 60F7276E
+P 3100 3850
+F 0 "J3" H 3100 4593 60  0000 C CNN
+F 1 "Bus_Connector" H 3100 4487 60  0000 C CNN
+F 2 "esp32bus:PinHeader" H 3100 4381 60  0000 C CNN
+F 3 "" H 3650 3150 60  0000 C CNN
+	1    3100 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 4000 2600 4000
+Wire Wire Line
+	2500 4500 2600 4500
+Wire Wire Line
+	3600 3700 3700 3700
+Wire Wire Line
+	3600 4000 3700 4000
+$Comp
+L power:GND #PWR0121
+U 1 1 60F7A061
+P 3700 3400
+F 0 "#PWR0121" H 3700 3150 50  0001 C CNN
+F 1 "GND" H 3705 3227 50  0000 C CNN
+F 2 "" H 3700 3400 50  0001 C CNN
+F 3 "" H 3700 3400 50  0001 C CNN
+	1    3700 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3600 3500 3700 3500
+Wire Wire Line
+	3700 3500 3700 3400
+$Comp
+L power:+3.3V #PWR0122
+U 1 1 60F7BA28
+P 2450 3400
+F 0 "#PWR0122" H 2450 3250 50  0001 C CNN
+F 1 "+3.3V" H 2465 3573 50  0000 C CNN
+F 2 "" H 2450 3400 50  0001 C CNN
+F 3 "" H 2450 3400 50  0001 C CNN
+	1    2450 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3400 2450 3500
+Wire Wire Line
+	2450 3500 2600 3500
+NoConn ~ 2600 3600
+NoConn ~ 2600 3700
+NoConn ~ 2600 3800
+NoConn ~ 2600 3900
+NoConn ~ 2600 4100
+NoConn ~ 2600 4200
+NoConn ~ 2600 4300
+NoConn ~ 2600 4400
+NoConn ~ 2600 4600
+NoConn ~ 2600 4700
+NoConn ~ 2600 4800
+NoConn ~ 3600 3600
+NoConn ~ 3600 3800
+NoConn ~ 3600 3900
+NoConn ~ 3600 4100
+NoConn ~ 3600 4200
+NoConn ~ 3600 4300
+NoConn ~ 3600 4400
+NoConn ~ 3600 4500
+NoConn ~ 3600 4600
+NoConn ~ 3600 4700
+Text GLabel 3700 5000 2    50   Input ~ 0
+CANH
+Text GLabel 3700 4900 2    50   Input ~ 0
+CANL
+Wire Wire Line
+	3600 4900 3700 4900
+Wire Wire Line
+	3600 5000 3700 5000
 $EndSCHEMATC

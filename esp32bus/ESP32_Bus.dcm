@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Bus_Connector
+D ESP32 Bus Connector
+K esp32
+$ENDCMP
+#
+#End Doc Library
