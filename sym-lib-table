@@ -3,4 +3,5 @@
   (lib (name IP5108Comp)(type Legacy)(uri ${KIPRJMOD}/IP5108/IP5108Comp.lib)(options "")(descr ""))
   (lib (name pcb-esp32-power-rescue)(type Legacy)(uri ${KIPRJMOD}/pcb-esp32-power-rescue.lib)(options "")(descr ""))
   (lib (name ESP32_Bus)(type Legacy)(uri ${KIPRJMOD}/esp32bus/ESP32_Bus.lib)(options "")(descr ""))
+  (lib (name C-OBD-II-16M)(type Legacy)(uri ${KIPRJMOD}/OBD-II/C-OBD-II-16M.lib)(options "")(descr ""))
 )
