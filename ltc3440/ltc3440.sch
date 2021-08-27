@@ -1,0 +1,238 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ltc3440:LTC3440EMS#PBF IC?
+U 1 1 612CB694
+P 4450 3400
+AR Path="/612652A3/612CB694" Ref="IC?"  Part="1" 
+AR Path="/612C7D18/612CB694" Ref="IC?"  Part="1" 
+F 0 "IC?" H 5250 2735 50  0000 C CNN
+F 1 "LTC3440EMS#PBF" H 5250 2826 50  0000 C CNN
+F 2 "SOP50P490X110-10N" H 5900 3500 50  0001 L CNN
+F 3 "" H 5900 3400 50  0001 L CNN
+F 4 "LTC3440EMS#PBF, DC-DC Converter, 0.6A Adjustable, Step-Down/Up, 2 MHz, 10-Pin MSOP" H 5900 3300 50  0001 L CNN "Description"
+F 5 "1.1" H 5900 3200 50  0001 L CNN "Height"
+F 6 "584-LTC3440EMS#PBF" H 5900 3100 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Analog-Devices-Linear-Technology/LTC3440EMSPBF?qs=hVkxg5c3xu%2F50%252Bg90voenw%3D%3D" H 5900 3000 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Linear Technology" H 5900 2900 50  0001 L CNN "Manufacturer_Name"
+F 9 "LTC3440EMS#PBF" H 5900 2800 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4450 3400
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 612CB69A
+P 4150 3950
+F 0 "R?" H 4220 3996 50  0000 L CNN
+F 1 "R" H 4220 3905 50  0000 L CNN
+F 2 "" V 4080 3950 50  0001 C CNN
+F 3 "~" H 4150 3950 50  0001 C CNN
+	1    4150 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 612CB6A0
+P 3700 3250
+F 0 "L?" H 3753 3296 50  0000 L CNN
+F 1 "L" H 3753 3205 50  0000 L CNN
+F 2 "" H 3700 3250 50  0001 C CNN
+F 3 "~" H 3700 3250 50  0001 C CNN
+	1    3700 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 612CB6A6
+P 3700 3950
+F 0 "C?" H 3815 3996 50  0000 L CNN
+F 1 "4,7uF" H 3815 3905 50  0000 L CNN
+F 2 "" H 3738 3800 50  0001 C CNN
+F 3 "~" H 3700 3950 50  0001 C CNN
+	1    3700 3950
+	1    0    0    -1  
+$EndComp
+Text GLabel 3450 3650 0    50   Input ~ 0
+5VOUT
+Wire Wire Line
+	6200 3650 3700 3650
+Connection ~ 3700 3650
+Wire Wire Line
+	3700 3650 3450 3650
+$Comp
+L power:GND #PWR?
+U 1 1 612CB6B2
+P 4000 4100
+AR Path="/612652A3/612CB6B2" Ref="#PWR?"  Part="1" 
+AR Path="/612C7D18/612CB6B2" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4000 3850 50  0001 C CNN
+F 1 "GND" H 4005 3927 50  0000 C CNN
+F 2 "" H 4000 4100 50  0001 C CNN
+F 3 "" H 4000 4100 50  0001 C CNN
+	1    4000 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3650 3700 3800
+Wire Wire Line
+	3700 3100 4050 3100
+Wire Wire Line
+	4050 3100 4050 3200
+Wire Wire Line
+	4050 3200 4450 3200
+Wire Wire Line
+	3700 3400 4050 3400
+Wire Wire Line
+	4050 3400 4050 3300
+Wire Wire Line
+	4050 3300 4450 3300
+Connection ~ 4150 4100
+Wire Wire Line
+	4150 4100 4000 4100
+NoConn ~ 4450 3100
+$Comp
+L power:+3.3V #PWR?
+U 1 1 612CB938
+P 7400 3000
+F 0 "#PWR?" H 7400 2850 50  0001 C CNN
+F 1 "+3.3V" H 7415 3173 50  0000 C CNN
+F 2 "" H 7400 3000 50  0001 C CNN
+F 3 "" H 7400 3000 50  0001 C CNN
+	1    7400 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 612CDC27
+P 7050 3150
+F 0 "R?" H 7120 3196 50  0000 L CNN
+F 1 "R" H 7120 3105 50  0000 L CNN
+F 2 "" V 6980 3150 50  0001 C CNN
+F 3 "~" H 7050 3150 50  0001 C CNN
+	1    7050 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 612CE3CB
+P 7050 3850
+F 0 "R?" H 7120 3896 50  0000 L CNN
+F 1 "R" H 7120 3805 50  0000 L CNN
+F 2 "" V 6980 3850 50  0001 C CNN
+F 3 "~" H 7050 3850 50  0001 C CNN
+	1    7050 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 612CEA7E
+P 6450 3600
+F 0 "R?" V 6243 3600 50  0000 C CNN
+F 1 "R" V 6334 3600 50  0000 C CNN
+F 2 "" V 6380 3600 50  0001 C CNN
+F 3 "~" H 6450 3600 50  0001 C CNN
+	1    6450 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 612CF4A8
+P 6750 3600
+F 0 "C?" V 6498 3600 50  0000 C CNN
+F 1 "C" V 6589 3600 50  0000 C CNN
+F 2 "" H 6788 3450 50  0001 C CNN
+F 3 "~" H 6750 3600 50  0001 C CNN
+	1    6750 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4150 3800 4150 3400
+Wire Wire Line
+	4150 3400 4450 3400
+Wire Wire Line
+	4450 3000 4350 3000
+Wire Wire Line
+	4350 3000 4350 4100
+Wire Wire Line
+	4350 4100 4150 4100
+Connection ~ 4000 4100
+Wire Wire Line
+	4000 4100 3700 4100
+Wire Wire Line
+	6050 3100 6200 3100
+Wire Wire Line
+	6200 3100 6200 3200
+Wire Wire Line
+	6050 3200 6200 3200
+Connection ~ 6200 3200
+Wire Wire Line
+	6200 3200 6200 3650
+$Comp
+L Device:C C?
+U 1 1 612D2BE3
+P 7400 3400
+F 0 "C?" H 7515 3446 50  0000 L CNN
+F 1 "C" H 7515 3355 50  0000 L CNN
+F 2 "" H 7438 3250 50  0001 C CNN
+F 3 "~" H 7400 3400 50  0001 C CNN
+	1    7400 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3000 7050 3000
+Wire Wire Line
+	7400 3000 7400 3250
+Connection ~ 7050 3000
+Wire Wire Line
+	7050 3000 7400 3000
+Connection ~ 7400 3000
+Wire Wire Line
+	6050 3300 7050 3300
+Wire Wire Line
+	6050 3400 6300 3400
+Wire Wire Line
+	6300 3400 6300 3600
+Wire Wire Line
+	7050 3300 7050 3600
+Connection ~ 7050 3300
+Wire Wire Line
+	6900 3600 7050 3600
+Connection ~ 7050 3600
+Wire Wire Line
+	7050 3600 7050 3700
+Wire Wire Line
+	7050 4000 7050 4100
+Wire Wire Line
+	7050 4100 7250 4100
+Wire Wire Line
+	7400 4100 7400 3550
+$Comp
+L power:GND #PWR?
+U 1 1 612D59DB
+P 7250 4100
+AR Path="/612652A3/612D59DB" Ref="#PWR?"  Part="1" 
+AR Path="/612C7D18/612D59DB" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7250 3850 50  0001 C CNN
+F 1 "GND" H 7255 3927 50  0000 C CNN
+F 2 "" H 7250 4100 50  0001 C CNN
+F 3 "" H 7250 4100 50  0001 C CNN
+	1    7250 4100
+	1    0    0    -1  
+$EndComp
+Connection ~ 7250 4100
+Wire Wire Line
+	7250 4100 7400 4100
+$EndSCHEMATC

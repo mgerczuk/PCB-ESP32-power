@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LTC3440EMS#PBF
+D LTC3440EMS#PBF, DC-DC Converter, 0.6A Adjustable, Step-Down/Up, 2 MHz, 10-Pin MSOP
+$ENDCMP
+#
+#End Doc Library

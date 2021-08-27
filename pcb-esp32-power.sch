@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -120,38 +120,6 @@ F 3 "" H 6150 6900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SamacSys_Parts:SY8008B IC2
-U 1 1 60D71E94
-P 1600 6600
-F 0 "IC2" H 2100 6865 50  0000 C CNN
-F 1 "SY8008B" H 2100 6774 50  0000 C CNN
-F 2 "SamacSys_Parts:SOT95P285X140-5N" H 2450 6700 50  0001 L CNN
-F 3 "http://www.sunnyqi.com/upLoad/product/month_1306/SY8008.pdf" H 2450 6600 50  0001 L CNN
-F 4 "High Efficiency 1.5MHz, 0.6A/1A/1.2A Synchronous Step Down Regulator Preliminary Spec" H 2450 6500 50  0001 L CNN "Description"
-F 5 "1.4" H 2450 6400 50  0001 L CNN "Height"
-F 6 "Silergy" H 2450 6300 50  0001 L CNN "Manufacturer_Name"
-F 7 "SY8008B" H 2450 6200 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 2450 6100 50  0001 L CNN "Mouser Part Number"
-F 9 "" H 2450 6000 50  0001 L CNN "Mouser Price/Stock"
-F 10 "" H 2450 5900 50  0001 L CNN "Arrow Part Number"
-F 11 "" H 2450 5800 50  0001 L CNN "Arrow Price/Stock"
-	1    1600 6600
-	1    0    0    -1  
-$EndComp
-Text GLabel 1050 6250 0    50   Input ~ 0
-5VOUT
-$Comp
-L power:+3.3V #PWR0113
-U 1 1 60D73F07
-P 4900 6200
-F 0 "#PWR0113" H 4900 6050 50  0001 C CNN
-F 1 "+3.3V" H 4915 6373 50  0000 C CNN
-F 2 "" H 4900 6200 50  0001 C CNN
-F 3 "" H 4900 6200 50  0001 C CNN
-	1    4900 6200
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:PWR_FLAG #FLG0103
 U 1 1 60D74F1F
 P 6550 6900
@@ -173,189 +141,6 @@ F 3 "" H 6550 6900 50  0001 C CNN
 	1    6550 6900
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	2600 6600 2600 6250
-Wire Wire Line
-	2800 6250 2700 6250
-$Comp
-L Device:R R11
-U 1 1 60D79945
-P 1200 6400
-F 0 "R11" H 1270 6446 50  0000 L CNN
-F 1 "100k" H 1270 6355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1130 6400 50  0001 C CNN
-F 3 "~" H 1200 6400 50  0001 C CNN
-	1    1200 6400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R12
-U 1 1 60D7A4DC
-P 1200 6800
-F 0 "R12" H 1270 6846 50  0000 L CNN
-F 1 "100k" H 1270 6755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1130 6800 50  0001 C CNN
-F 3 "~" H 1200 6800 50  0001 C CNN
-	1    1200 6800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1200 6250 1050 6250
-$Comp
-L power:GND #PWR0115
-U 1 1 60D90272
-P 1200 6950
-F 0 "#PWR0115" H 1200 6700 50  0001 C CNN
-F 1 "GND" H 1205 6777 50  0000 C CNN
-F 2 "" H 1200 6950 50  0001 C CNN
-F 3 "" H 1200 6950 50  0001 C CNN
-	1    1200 6950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:L L2
-U 1 1 60DAEADC
-P 2950 6250
-F 0 "L2" V 2769 6250 50  0000 C CNN
-F 1 "2.2uH" V 2860 6250 50  0000 C CNN
-F 2 "IP5108:CD54_Inductor" H 2950 6250 50  0001 C CNN
-F 3 "~" H 2950 6250 50  0001 C CNN
-	1    2950 6250
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C6
-U 1 1 60DAFF2B
-P 3300 6450
-F 0 "C6" H 3415 6496 50  0000 L CNN
-F 1 "47pF" H 3415 6405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3338 6300 50  0001 C CNN
-F 3 "~" H 3300 6450 50  0001 C CNN
-	1    3300 6450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R13
-U 1 1 60DB5688
-P 3750 6450
-F 0 "R13" H 3820 6496 50  0000 L CNN
-F 1 "453k 1%" H 3820 6405 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3680 6450 50  0001 C CNN
-F 3 "~" H 3750 6450 50  0001 C CNN
-	1    3750 6450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R14
-U 1 1 60DB5D90
-P 3750 6900
-F 0 "R14" H 3820 6946 50  0000 L CNN
-F 1 "100k 1%" H 3820 6855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3680 6900 50  0001 C CNN
-F 3 "~" H 3750 6900 50  0001 C CNN
-	1    3750 6900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP CP8
-U 1 1 60DB6F82
-P 4400 6450
-F 0 "CP8" H 4518 6496 50  0000 L CNN
-F 1 "22uF" H 4518 6405 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-6032-28_Kemet-C_Pad2.25x2.35mm_HandSolder" H 4438 6300 50  0001 C CNN
-F 3 "~" H 4400 6450 50  0001 C CNN
-	1    4400 6450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP CP9
-U 1 1 60DB78E9
-P 4900 6450
-F 0 "CP9" H 5018 6496 50  0000 L CNN
-F 1 "22uF" H 5018 6405 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-6032-28_Kemet-C_Pad2.25x2.35mm_HandSolder" H 4938 6300 50  0001 C CNN
-F 3 "~" H 4900 6450 50  0001 C CNN
-	1    4900 6450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3100 6250 3300 6250
-Wire Wire Line
-	4900 6250 4900 6200
-Wire Wire Line
-	3300 6300 3300 6250
-Connection ~ 3300 6250
-Wire Wire Line
-	3300 6250 3750 6250
-Wire Wire Line
-	3750 6300 3750 6250
-Connection ~ 3750 6250
-Wire Wire Line
-	3750 6250 4400 6250
-Wire Wire Line
-	4400 6300 4400 6250
-Connection ~ 4400 6250
-Wire Wire Line
-	4400 6250 4900 6250
-Wire Wire Line
-	4900 6300 4900 6250
-Connection ~ 4900 6250
-Wire Wire Line
-	2600 6700 3300 6700
-Wire Wire Line
-	3750 6700 3750 6600
-Wire Wire Line
-	3300 6600 3300 6700
-Connection ~ 3300 6700
-Wire Wire Line
-	3300 6700 3750 6700
-Wire Wire Line
-	3750 6750 3750 6700
-Connection ~ 3750 6700
-Wire Wire Line
-	4900 6600 4900 7050
-Wire Wire Line
-	4900 7050 4400 7050
-Wire Wire Line
-	4400 6600 4400 7050
-Connection ~ 4400 7050
-Wire Wire Line
-	4400 7050 3750 7050
-$Comp
-L power:GND #PWR0116
-U 1 1 60DDFC8D
-P 4900 7050
-F 0 "#PWR0116" H 4900 6800 50  0001 C CNN
-F 1 "GND" H 4905 6877 50  0000 C CNN
-F 2 "" H 4900 7050 50  0001 C CNN
-F 3 "" H 4900 7050 50  0001 C CNN
-	1    4900 7050
-	1    0    0    -1  
-$EndComp
-Connection ~ 4900 7050
-Wire Wire Line
-	1600 6800 1600 7000
-Wire Wire Line
-	1600 7000 2700 7000
-Wire Wire Line
-	2700 7000 2700 6250
-Wire Wire Line
-	2600 6250 1200 6250
-Connection ~ 1200 6250
-Wire Wire Line
-	1600 6600 1200 6600
-Wire Wire Line
-	1200 6600 1200 6550
-Wire Wire Line
-	1200 6650 1200 6600
-Connection ~ 1200 6600
-Wire Wire Line
-	1600 6700 1500 6700
-Wire Wire Line
-	1500 6700 1500 6950
-Wire Wire Line
-	1500 6950 1200 6950
-Connection ~ 1200 6950
 $Comp
 L Connector_Generic:Conn_01x02 J2
 U 1 1 60EFB4F7
@@ -603,4 +388,22 @@ NoConn ~ 2250 1500
 NoConn ~ 2250 1400
 NoConn ~ 2250 1300
 NoConn ~ 2250 1200
+$Sheet
+S 8750 2200 1200 850 
+U 612652A3
+F0 "TP4054" 50
+F1 "tp4054/tp4054.sch" 50
+$EndSheet
+$Sheet
+S 9100 3550 1100 950 
+U 612B5E8A
+F0 "SY8008" 50
+F1 "sy8008/sy8008.sch" 50
+$EndSheet
+$Sheet
+S 9050 5100 1250 950 
+U 612C7D18
+F0 "LTC3440" 50
+F1 "ltc3440/ltc3440.sch" 50
+$EndSheet
 $EndSCHEMATC
