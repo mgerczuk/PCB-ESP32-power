@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -152,12 +152,6 @@ F 3 "~" H 8150 3450 50  0001 C CNN
 	1    8150 3450
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 8600 1200 800  400 
-U 60F1A96E
-F0 "IP5108" 50
-F1 "IP5108/ip5108.sch" 50
-$EndSheet
 $Comp
 L power:+BATT #PWR0101
 U 1 1 60F375B2
@@ -209,10 +203,10 @@ F 3 "~" H 5550 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R7
+L Device:R R5
 U 1 1 60F61A44
 P 5550 1950
-F 0 "R7" H 5620 1996 50  0000 L CNN
+F 0 "R5" H 5620 1996 50  0000 L CNN
 F 1 "R" H 5620 1905 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5480 1950 50  0001 C CNN
 F 3 "~" H 5550 1950 50  0001 C CNN
@@ -241,7 +235,7 @@ F 3 "" H 5550 2100 50  0001 C CNN
 	1    5550 2100
 	1    0    0    -1  
 $EndComp
-Text GLabel 2500 4000 0    50   Input ~ 0
+Text GLabel 2500 3900 0    50   Input ~ 0
 EXTPOW
 Text GLabel 3700 4000 2    50   Input ~ 0
 SDA
@@ -301,7 +295,6 @@ Wire Wire Line
 NoConn ~ 2600 3600
 NoConn ~ 2600 3700
 NoConn ~ 2600 3800
-NoConn ~ 2600 3900
 NoConn ~ 2600 4100
 NoConn ~ 2600 4200
 NoConn ~ 2600 4300
@@ -401,9 +394,75 @@ F0 "SY8008" 50
 F1 "sy8008/sy8008.sch" 50
 $EndSheet
 $Sheet
-S 9050 5100 1250 950 
-U 612C7D18
-F0 "LTC3440" 50
-F1 "ltc3440/ltc3440.sch" 50
+S 9100 4900 1150 950 
+U 612FA5D2
+F0 "LTC3530" 50
+F1 "ltc3530/ltc3530.sch" 50
 $EndSheet
+Wire Wire Line
+	2500 3900 2600 3900
+Text GLabel 2500 4000 0    50   Input ~ 0
+BATTVOLT
+Text GLabel 7150 1750 2    50   Input ~ 0
+BATTVOLT
+$Comp
+L power:+BATT #PWR0116
+U 1 1 6131DA4C
+P 7000 1400
+F 0 "#PWR0116" H 7000 1250 50  0001 C CNN
+F 1 "+BATT" H 7015 1573 50  0000 C CNN
+F 2 "" H 7000 1400 50  0001 C CNN
+F 3 "" H 7000 1400 50  0001 C CNN
+	1    7000 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 6131E154
+P 7000 1550
+F 0 "R16" H 7070 1596 50  0000 L CNN
+F 1 "100k" H 7070 1505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6930 1550 50  0001 C CNN
+F 3 "~" H 7000 1550 50  0001 C CNN
+	1    7000 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 6131E8A9
+P 7000 1950
+F 0 "R17" H 7070 1996 50  0000 L CNN
+F 1 "100k" H 7070 1905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6930 1950 50  0001 C CNN
+F 3 "~" H 7000 1950 50  0001 C CNN
+	1    7000 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 6131ED93
+P 7000 2100
+F 0 "#PWR0117" H 7000 1850 50  0001 C CNN
+F 1 "GND" H 7005 1927 50  0000 C CNN
+F 2 "" H 7000 2100 50  0001 C CNN
+F 3 "" H 7000 2100 50  0001 C CNN
+	1    7000 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 1700 7000 1750
+Wire Wire Line
+	7150 1750 7000 1750
+Connection ~ 7000 1750
+Wire Wire Line
+	7000 1750 7000 1800
+Text GLabel 4650 3700 2    50   Input ~ 0
+SCL
+Text GLabel 4650 3850 2    50   Input ~ 0
+SDA
+Text GLabel 4650 4000 2    50   Input ~ 0
+INT
+NoConn ~ 4650 3700
+NoConn ~ 4650 3850
+NoConn ~ 4650 4000
 $EndSCHEMATC
