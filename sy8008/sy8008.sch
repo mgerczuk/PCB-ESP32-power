@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -71,8 +71,6 @@ F 3 "~" H 3900 3650 50  0001 C CNN
 	1    3900 3650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3900 3100 3550 3100
 $Comp
 L power:GND #PWR022
 U 1 1 612C6F8F
@@ -139,17 +137,6 @@ F 3 "~" H 7100 3300 50  0001 C CNN
 	1    7100 3300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:CP CP2
-U 1 1 612C6FB3
-P 7600 3300
-F 0 "CP2" H 7718 3346 50  0000 L CNN
-F 1 "22uF" H 7718 3255 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-6032-28_Kemet-C_Pad2.25x2.35mm_HandSolder" H 7638 3150 50  0001 C CNN
-F 3 "~" H 7600 3300 50  0001 C CNN
-	1    7600 3300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5800 3100 6000 3100
 Wire Wire Line
@@ -170,9 +157,6 @@ Connection ~ 7100 3100
 Wire Wire Line
 	7100 3100 7600 3100
 Wire Wire Line
-	7600 3150 7600 3100
-Connection ~ 7600 3100
-Wire Wire Line
 	5300 3550 6000 3550
 Wire Wire Line
 	6450 3550 6450 3450
@@ -184,8 +168,6 @@ Wire Wire Line
 Wire Wire Line
 	6450 3600 6450 3550
 Connection ~ 6450 3550
-Wire Wire Line
-	7600 3450 7600 3900
 Wire Wire Line
 	7600 3900 7100 3900
 Wire Wire Line
@@ -204,7 +186,6 @@ F 3 "" H 7600 3900 50  0001 C CNN
 	1    7600 3900
 	1    0    0    -1  
 $EndComp
-Connection ~ 7600 3900
 Wire Wire Line
 	4300 3650 4300 3850
 Wire Wire Line
@@ -228,24 +209,12 @@ Wire Wire Line
 Wire Wire Line
 	4200 3800 3900 3800
 Connection ~ 3900 3800
-$Comp
-L Device:CP CP5
-U 1 1 61352E16
-P 3550 3300
-F 0 "CP5" H 3668 3346 50  0000 L CNN
-F 1 "22uF" H 3668 3255 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-6032-28_Kemet-C_Pad2.25x2.35mm_HandSolder" H 3588 3150 50  0001 C CNN
-F 3 "~" H 3550 3300 50  0001 C CNN
-	1    3550 3300
-	1    0    0    -1  
-$EndComp
+Connection ~ 7600 3900
 Wire Wire Line
-	3550 3150 3550 3100
-Connection ~ 3550 3100
+	7600 3450 7600 3900
+Connection ~ 7600 3100
 Wire Wire Line
-	3550 3100 3350 3100
+	7600 3150 7600 3100
 Wire Wire Line
-	3550 3450 3550 3800
-Wire Wire Line
-	3550 3800 3900 3800
+	3350 3100 3900 3100
 $EndSCHEMATC
