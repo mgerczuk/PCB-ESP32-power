@@ -1,4 +1,4 @@
-update=23.07.2021 16:54:13
+update=29.10.2021 13:04:33
 version=1
 last_client=kicad
 [general]
@@ -249,7 +249,18 @@ dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=Dick
 Clearance=0.2
-TrackWidth=0.4
+TrackWidth=0.3
+ViaDiameter=0.8
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
+Name=Dick2
+Clearance=0.2
+TrackWidth=0.5
 ViaDiameter=0.8
 ViaDrill=0.4
 uViaDiameter=0.3

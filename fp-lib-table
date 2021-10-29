@@ -5,4 +5,5 @@
   (lib (name OBD-II)(type KiCad)(uri ${KIPRJMOD}/OBD-II/OBD-II.pretty)(options "")(descr ""))
   (lib (name tp4054)(type KiCad)(uri ${KIPRJMOD}/tp4054/tp4054.pretty)(options "")(descr ""))
   (lib (name ltc3530)(type KiCad)(uri ${KIPRJMOD}/ltc3530/ltc3530.pretty)(options "")(descr ""))
+  (lib (name ltc4091)(type KiCad)(uri ${KIPRJMOD}/ltc4091/ltc4091.pretty)(options "")(descr ""))
 )

@@ -7,4 +7,5 @@
   (lib (name tp4054)(type Legacy)(uri ${KIPRJMOD}/tp4054/tp4054.lib)(options "")(descr ""))
   (lib (name ltc3440)(type Legacy)(uri ${KIPRJMOD}/ltc3440/ltc3440.lib)(options "")(descr ""))
   (lib (name LTC3530EMS)(type Legacy)(uri ${KIPRJMOD}/ltc3530/LTC3530EMS.lib)(options "")(descr ""))
+  (lib (name ltc4091)(type Legacy)(uri ${KIPRJMOD}/ltc4091/ltc4091.lib)(options "")(descr ""))
 )
