@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\Martin.HOME\Projekte\pcb-esp32-power\pcb-esp32-power.sch)
-    (date "05.11.2021 12:56:12")
+    (date "05.11.2021 15:16:40")
     (tool "Eeschema (5.1.10)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -255,11 +255,13 @@
       (value 68uF)
       (footprint Capacitor_SMD:C_1206_3216Metric)
       (datasheet ~)
+      (fields
+        (field (name "Mouser Part Number") 810-C3216X5R1A686M1C))
       (libsource (lib Device) (part C) (description "Unpolarized capacitor"))
       (sheetpath (names /LTC4091/) (tstamps /6172D804/))
       (tstamp 61741BF5))
     (comp (ref R22)
-      (value 4.99k)
+      (value 10k)
       (footprint Resistor_SMD:R_0603_1608Metric)
       (datasheet ~)
       (libsource (lib Device) (part R) (description Resistor))
@@ -269,6 +271,8 @@
       (value 3.3uF)
       (footprint Capacitor_SMD:C_0603_1608Metric)
       (datasheet ~)
+      (fields
+        (field (name "Mouser Part Number") 810-C1608X5R1C335KAC))
       (libsource (lib Device) (part C) (description "Unpolarized capacitor"))
       (sheetpath (names /LTC4091/) (tstamps /6172D804/))
       (tstamp 61744E93))
@@ -276,6 +280,8 @@
       (value 0.05R)
       (footprint Resistor_SMD:R_0603_1608Metric)
       (datasheet ~)
+      (fields
+        (field (name "Mouser Part Number") 603-PT0603FR-070R05L))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /LTC4091/) (tstamps /6172D804/))
       (tstamp 61747103))
@@ -290,6 +296,8 @@
       (value B360A)
       (footprint Diode_SMD:D_SMA)
       (datasheet ~)
+      (fields
+        (field (name "Mouser Part Number") 78-B360A-M3/61T))
       (libsource (lib Device) (part D_Schottky) (description "Schottky diode"))
       (sheetpath (names /LTC4091/) (tstamps /6172D804/))
       (tstamp 6174CBF0))
@@ -311,6 +319,8 @@
       (value 40.2k)
       (footprint Resistor_SMD:R_0603_1608Metric)
       (datasheet ~)
+      (fields
+        (field (name "Mouser Part Number") 71-CRCW0603-40.2K))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /LTC4091/) (tstamps /6172D804/))
       (tstamp 6177B8F0))
@@ -353,6 +363,8 @@
       (value MMDT5551)
       (footprint Package_TO_SOT_SMD:SOT-363_SC-70-6)
       (datasheet http://www.diodes.com/_files/datasheets/ds30172.pdf)
+      (fields
+        (field (name "Mouser Part Number") 621-MMDT5551-F))
       (libsource (lib Transistor_BJT) (part MMDT5551) (description "200mA IC, 160V Vce, Dual NPN/NPN Transistors, SOT-363"))
       (sheetpath (names /LTC4091/) (tstamps /6172D804/))
       (tstamp 6179C4B5))
@@ -360,6 +372,8 @@
       (value 140k)
       (footprint Resistor_SMD:R_0603_1608Metric)
       (datasheet ~)
+      (fields
+        (field (name "Mouser Part Number") 603-RC0603FR-07140KL))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /LTC4091/) (tstamps /6172D804/))
       (tstamp 617A33AD))
@@ -381,6 +395,8 @@
       (value 49.9k)
       (footprint Resistor_SMD:R_0603_1608Metric)
       (datasheet ~)
+      (fields
+        (field (name "Mouser Part Number") 71-CRCW0603-49.9K))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /LTC4091/) (tstamps /6172D804/))
       (tstamp 617A50FF))
@@ -388,6 +404,8 @@
       (value 6.8V)
       (footprint Diode_SMD:D_SOD-123)
       (datasheet ~)
+      (fields
+        (field (name "Mouser Part Number") 78-MMSZ5235B-G3-08))
       (libsource (lib Device) (part D_Zener) (description "Zener diode"))
       (sheetpath (names /LTC4091/) (tstamps /6172D804/))
       (tstamp 617A59CB))
@@ -395,6 +413,8 @@
       (value 330nF)
       (footprint Capacitor_SMD:C_0805_2012Metric)
       (datasheet ~)
+      (fields
+        (field (name "Mouser Part Number") 81-GCM219R71H334KA5D))
       (libsource (lib Device) (part C) (description "Unpolarized capacitor"))
       (sheetpath (names /LTC4091/) (tstamps /6172D804/))
       (tstamp 617A40B1))
@@ -402,6 +422,8 @@
       (value 4.7uF)
       (footprint Capacitor_SMD:C_1206_3216Metric)
       (datasheet ~)
+      (fields
+        (field (name "Mouser Part Number") 81-GRM31CR71H475KA2L))
       (libsource (lib Device) (part C) (description "Unpolarized capacitor"))
       (sheetpath (names /LTC4091/) (tstamps /6172D804/))
       (tstamp 617A2C34))
